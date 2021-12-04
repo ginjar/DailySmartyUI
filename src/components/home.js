@@ -18,15 +18,12 @@ class Home extends Component{
   render() {
     return (
       <div>
-        <h1>Gina Daily Smarty</h1>
-        <h2>DevCamp Bottega Course</h2>
+        
         <Logo />
-        <SearchBar onSubmit={(query) => this.handleSearchBarSubmit(query)}/>
+        <SearchBar page= "home" onSubmit={(query) => this.handleSearchBarSubmit(query)}/>
         <RecentPosts />
       
         </div>
-        
-       
     );
   }
 }
